@@ -3,8 +3,8 @@
 int main(){
     
     int a;
-    scanf("%d",&a);
-    int d = printf("a : %d\n",a);
+    scanf("%u",&a);//wull store only positive numbers
+    int d = printf("a : %u\n",a);//limit is 4294967296 = 0
     printf("previous statement lenght is : %d\n",d);
     //'a' - 1, ' ' - 2, ':' - 3, ' ' - 4, '%d' - 5(size of integer), '\n' - 6 
     /*  '/' is a escape sequence charater                             /\
