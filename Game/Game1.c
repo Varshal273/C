@@ -9,21 +9,21 @@ int main(){
     int randomNumber = (rand() %100)+1;
     // printf("Random Number : %d\n",randomNumber);
     int no_of_guesses = 0;
-    int guessed;
+    int guessed_number;
 
     do
     {
         printf("Guess the Number : ");
-        scanf("%d",&guessed);
-        if(guessed>randomNumber){
+        scanf("%d",&guessed_number);
+        if(guessed_number>randomNumber)
             printf("Lower Number please!\n");
-        }
-        else{
+        else if(guessed_number<randomNumber)
             printf("Higher Number Please!\n");
-        }
+        else
+            printf("Congrats!!\n");
         no_of_guesses++;
             
-    } while (guessed!=randomNumber);
+    } while (guessed_number!=randomNumber);
     
     printf("You guessed the Number in %d Guesses",no_of_guesses);
     
