@@ -4,7 +4,7 @@ int factorial (int);
 
 int factorial(int n ){
     if(n == 1 || n == 0){  // Base Condition
-        return 1;          // It works!
+        return 1;          // It really works!
     }
     return factorial(n-1) * n;
 }
