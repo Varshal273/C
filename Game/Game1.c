@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <unistd.h>
 
 int main(){
     
@@ -15,6 +16,7 @@ int main(){
     {
         printf("Guess the Number : ");
         scanf("%d",&guessed_number);
+        system("cls");
         if(guessed_number>randomNumber)
             printf("Lower Number please!\n");
         else if(guessed_number<randomNumber)
@@ -22,7 +24,9 @@ int main(){
         else
             printf("Congrats!!\n");
         no_of_guesses++;
-            
+
+        // usleep(750000);
+
     } while (guessed_number!=randomNumber);
     
     printf("You guessed the Number in %d Guesses",no_of_guesses);
