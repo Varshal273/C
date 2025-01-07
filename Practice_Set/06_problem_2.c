@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <unistd.h>
 
-int sum (int a ,int b){
+int* sum (int a ,int b){
     int s = a+b;
     int* ptr = &s;
     printf("The sum is %d \n",s);
     return ptr;
 }
-float average (float a ,float b){
+float* average (int a ,int b){
     float avg = (a+b)/2.0;
     float* ptr = &avg;
     printf("The average is %f \n",avg);
