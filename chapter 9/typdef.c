@@ -16,7 +16,7 @@ int main(){
     Emp e1,e2;
     // Emp* ptr = &e1;
     // typedef struct employee emp;
-    e1.code = 5411;
+    e1.code = 5410;
     strcpy(e1.name,"Varshal");
     e1.salary = 45.44;
     e2.code = 5412;
